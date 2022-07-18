@@ -10,6 +10,11 @@ nav{
 .carousel-img{
   filter: brightness(0.7);
 }
+#suv-about{
+  width: fit-content;
+  height: 400px;
+  margin: auto;
+}
 .fab {
   padding: 20px;
   font-size: 25px;
