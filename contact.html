@@ -71,35 +71,49 @@
     <!--
         Contact Me
     -->
-    <div class="container pt-2">
-      <img
-        src="imgs/Me.jpg"
-        class="img-responsive w-50 rounded mx-auto d-block"
-      />
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class="text-center">Contact Me</h1>
-          <hr />
-        </div>
-      </div>
-      <div class="row">
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact Me</h2>
+    <p class="text-center w-responsive mx-auto mb-5">
+      Do you have any questions? Please do not hesitate to contact us directly.
+      Our team will come back to you within a matter of hours to help you.
+    </p>
+    <div class="container-fluid">
+      <div class="row justify-content-between pt-2">
         <div class="col-md-6">
-          <form action="https://formspree.io/f/xyyorzjv" method="POST">
-            <label>
-              <strong>Your email:</strong>
-              <input type="email" name="email" class="form-control" />
-            </label>
-          </div>
+          <img
+            src="imgs/Me.jpg"
+            alt=""
+            class="img-fluid img-thumbnail"
+            draggable="false"
+          />
         </div>
-          <div class="row">
-            <div class="col">
-            <label>
-              <strong>Your message:</strong>
-              <textarea name="message" class="form-control"></textarea>
-            </label>
+        <div class="col-md-6 pt-5">
+          <form action="https://formspree.io/f/xyyorzjv" method="POST">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                name="email"
+              />
+              <div id="emailHelp" class="form-text">
+                Please enter your email.
+              </div>
             </div>
-          </div>
-            <button type="submit" class="btn btn-success">Send</button>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label"
+                >Message</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleInputPassword1"
+                name="message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
           </form>
         </div>
       </div>
